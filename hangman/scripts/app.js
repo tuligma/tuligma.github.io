@@ -33,6 +33,10 @@ window.addEventListener('keypress', (e) => {
         
     } else {
         letterEl.textContent = ''
+        if (e.key == 'Enter') {
+            startGame()
+            letterEl.textContent = 'Reset'
+        }
     }
 })
 
