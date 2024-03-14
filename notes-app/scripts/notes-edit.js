@@ -9,7 +9,7 @@ let notes = getSavedNotes()
 let note = notes.find((note) => note.id === noteId)
 
 if (!note) {
-    location.assign('/index.html')
+    location.assign('./index.html')
 }
 
 let lastEdit = moment().fromNow()
