@@ -49,7 +49,7 @@ window.addEventListener('storage', (e) => {
         note = notes.find((note) => note.id === noteId)
         
         if (!note) {
-            location.assign('./index.html')
+            location.assign('./notes-app/')
         }
 
         titleElement.value = note.title
