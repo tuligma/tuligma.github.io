@@ -40,7 +40,7 @@ bodyElement.addEventListener('input', (e) => {
 removeElement.addEventListener('click', (e) => {
     removeNote(note.id)
     saveNotes(notes)
-    location.assign('./index.html')  
+    location.assign('./notes-app/')  
 })
 
 window.addEventListener('storage', (e) => {
