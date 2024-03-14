@@ -9,7 +9,7 @@ let notes = getSavedNotes()
 let note = notes.find((note) => note.id === noteId)
 
 if (!note) {
-    location.assign('./')
+    location.assign('./index.html')
 }
 
 let lastEdit = moment().fromNow()
@@ -40,7 +40,7 @@ bodyElement.addEventListener('input', (e) => {
 removeElement.addEventListener('click', (e) => {
     removeNote(note.id)
     saveNotes(notes)
-    location.assign('./')  
+    location.assign('./index.html')  
 })
 
 window.addEventListener('storage', (e) => {
@@ -49,7 +49,7 @@ window.addEventListener('storage', (e) => {
         note = notes.find((note) => note.id === noteId)
         
         if (!note) {
-            location.assign('./')
+            location.assign('./index.html')
         }
 
         titleElement.value = note.title
